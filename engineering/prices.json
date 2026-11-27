@@ -1,0 +1,527 @@
+{
+  "currency": "INR",
+  "checked": "2026-11-27",
+  "note": "Retail entries are listed references, not guaranteed purchase prices or exact CAD matches. All other entries are explicitly budget estimates. Custom housings require slicing and vendor quotes; electronics carriers require completed PCB designs. Carrier PCB allowances exclude separately listed devices. The power bank and laser are unqualified procurement allowances. No retail price is claimed for those designs. Shipping, assembly labour, development, clinical evaluation and unlisted taxes are excluded.",
+  "parts": {
+    "pi": {
+      "amount": 13459,
+      "kind": "retail",
+      "source": "https://robu.in/product-category/raspberry-pi-5/",
+      "note": "Pi 5 4GB listing, including GST. Procurement target; RAM is not identifiable from CAD.",
+      "name": "Raspberry Pi 5 · 4GB target",
+      "quantity": 1
+    },
+    "camera": {
+      "amount": 4399,
+      "kind": "retail",
+      "source": "https://robocraze.com/products/raspberry-pi-camera-module-3-wide",
+      "note": "Camera Module 3 Wide listing, including GST. Procurement target; lens identity is not established by CAD.",
+      "name": "Camera Module 3 · Wide target",
+      "quantity": 1
+    },
+    "s3": {
+      "amount": 731,
+      "kind": "retail",
+      "source": "https://www.flyrobo.in/yd-esp32-s3-n16r8-development-board-16mb-flash-8mb-psram-dual-usb-c",
+      "note": "Comparable N16R8 board, including GST; listing out of stock. Clone dimensions and pinout must be checked.",
+      "name": "ESP32-S3 N16R8",
+      "quantity": 1
+    },
+    "c3": {
+      "amount": 242,
+      "kind": "retail",
+      "source": "https://probots.co.in/esp32-c3-supermini-wifi-bluetooth-development-board-32-bit-risc-v-uart-i2c-spi.html",
+      "note": "ESP32-C3 SuperMini board listing, including GST.",
+      "name": "ESP32-C3 SuperMini",
+      "quantity": 1
+    },
+    "imu": {
+      "amount": 145,
+      "kind": "retail",
+      "source": "https://www.wavtron.in/products/gy-521-mpu-6050-gyroscope",
+      "note": "One GY-521 module, including GST. Two separate modules in the full build.",
+      "name": "GY-521 / MPU6050 · cane",
+      "quantity": 1
+    },
+    "foot_imu": {
+      "amount": 145,
+      "kind": "retail",
+      "source": "https://www.wavtron.in/products/gy-521-mpu-6050-gyroscope",
+      "note": "One GY-521 module, including GST. Two separate modules in the full build.",
+      "name": "GY-521 / MPU6050 · ankle",
+      "quantity": 1
+    },
+    "tof": {
+      "amount": 1599,
+      "kind": "retail",
+      "source": "https://www.flyrobo.in/vl53l5cx-v2-time-of-flight-8x8-multi-zone-tof-sensor",
+      "note": "Comparable VL53L5CX breakout, including GST. Board dimensions and supply compatibility need checking.",
+      "name": "VL53L5CX breakout",
+      "quantity": 1
+    },
+    "buzzer": {
+      "amount": 20,
+      "kind": "retail",
+      "source": "https://probots.co.in/buzzer-pcb-mountable.html",
+      "note": "Comparable 5V active buzzer, including GST; actual fitted rating requires qualification.",
+      "name": "Active buzzer · rating pending",
+      "quantity": 1
+    },
+    "motor": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://probots.co.in/mini-vibration-motor-round-coin-button-type-10mm.html",
+      "note": "Allowance for a 10mm coin motor. Confirm voltage and mechanical fit.",
+      "name": "10mm coin vibration motor",
+      "quantity": 1
+    },
+    "laser": {
+      "amount": 1500,
+      "kind": "estimate",
+      "source": "https://www.biophlox.com/lab-equipment/general-lab-equipment/Electronics-Equipment-1/Laser-Distance-Meter-1/Green-Line-Laser-ModulesAI00000023",
+      "note": "Provisional green line-laser allowance; supplier is quote-only. Optical safety and power ratings remain unqualified.",
+      "name": "Line laser · qualification pending",
+      "quantity": 1
+    },
+    "bank": {
+      "amount": 4500,
+      "kind": "estimate",
+      "source": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "note": "Power-system allowance, not a qualified bank quote. Must support stable 5V/5A for Pi plus simultaneous auxiliary output; generic USB-PD wattage is insufficient evidence.",
+      "name": "Protected dual-output power bank · selection pending",
+      "quantity": 1
+    },
+    "battery": {
+      "amount": 350,
+      "kind": "estimate",
+      "source": "https://www.dnatechindia.com/battery_holder/3-7-volt-500-mah-lithium-ion-polymer-battery.html",
+      "note": "Allowance for a protected 1S 500mAh LiPo; verify cell protection, dimensions, and charge rating.",
+      "name": "Protected 1S LiPo · 500mAh target",
+      "quantity": 1
+    },
+    "charger": {
+      "amount": 160,
+      "kind": "estimate",
+      "source": "https://www.digikey.in/en/products/detail/microchip-technology/MCP73831-2ACI-MC/1874108",
+      "note": "Carrier allowance including charger IC and reference passives. IC reference listing is ₹75.48 before any unlisted taxes; package differs from the target carrier. Bare PCB budget is separate.",
+      "name": "MCP73831 charger carrier",
+      "quantity": 1
+    },
+    "strap_reg": {
+      "amount": 330,
+      "kind": "estimate",
+      "source": "https://www.digikey.in/en/products/detail/texas-instruments/TPS63031DSKR/2048021",
+      "note": "Regulator assembly allowance including IC, inductor and passives. IC reference price ₹229.32 before any unlisted taxes; bare carrier budget is separate.",
+      "name": "TPS63031 3.3V buck-boost carrier",
+      "quantity": 1
+    },
+    "sd": {
+      "amount": 1100,
+      "kind": "estimate",
+      "source": "https://www.silverlineelectronics.in/products/raspberry-pi-official-64gb-v3-0-a2-class-micro-sd-card",
+      "note": "64GB microSD purchasing allowance; retail stock and capacity pricing vary.",
+      "name": "64GB microSD",
+      "quantity": 1
+    },
+    "q_laser": {
+      "amount": 15,
+      "kind": "estimate",
+      "source": "https://www.tme.com/in/en/details/ao3400a/smd-n-channel-transistors/alpha-omega-semiconductor/",
+      "note": "Per-MOSFET small-quantity allowance for AO3400A; taxes and minimum order quantities vary.",
+      "name": "AO3400A · laser low-side MOSFET",
+      "quantity": 1
+    },
+    "q_buzzer": {
+      "amount": 15,
+      "kind": "estimate",
+      "source": "https://www.tme.com/in/en/details/ao3400a/smd-n-channel-transistors/alpha-omega-semiconductor/",
+      "note": "Per-MOSFET small-quantity allowance for AO3400A; taxes and minimum order quantities vary.",
+      "name": "AO3400A · buzzer low-side MOSFET",
+      "quantity": 1
+    },
+    "q_motor": {
+      "amount": 15,
+      "kind": "estimate",
+      "source": "https://www.tme.com/in/en/details/ao3400a/smd-n-channel-transistors/alpha-omega-semiconductor/",
+      "note": "Per-MOSFET small-quantity allowance for AO3400A; taxes and minimum order quantities vary.",
+      "name": "AO3400A · motor low-side MOSFET",
+      "quantity": 1
+    },
+    "d_buzzer": {
+      "amount": 5,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "1N5819 flyback diode · buzzer",
+      "quantity": 1
+    },
+    "d_motor": {
+      "amount": 5,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "1N5819 flyback diode · motor",
+      "quantity": 1
+    },
+    "rg_laser": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate resistor · laser",
+      "quantity": 1
+    },
+    "rpd_laser": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate pull-down · laser",
+      "quantity": 1
+    },
+    "rg_buzzer": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate resistor · buzzer",
+      "quantity": 1
+    },
+    "rpd_buzzer": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate pull-down · buzzer",
+      "quantity": 1
+    },
+    "rg_motor": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate resistor · motor",
+      "quantity": 1
+    },
+    "rpd_motor": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "Gate pull-down · motor",
+      "quantity": 1
+    },
+    "pull_cane_sda": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "2.2k cane I2C pull-up · CANE_SDA",
+      "quantity": 1
+    },
+    "pull_cane_scl": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "2.2k cane I2C pull-up · CANE_SCL",
+      "quantity": 1
+    },
+    "pull_foot_sda": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "4.7k ankle I2C pull-up · FOOT_SDA",
+      "quantity": 1
+    },
+    "pull_foot_scl": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "4.7k ankle I2C pull-up · FOOT_SCL",
+      "quantity": 1
+    },
+    "pull_manual_input": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "10k button pull-up · MANUAL_INPUT",
+      "quantity": 1
+    },
+    "pull_sos_input": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "10k button pull-up · SOS_INPUT",
+      "quantity": 1
+    },
+    "tof_reset_pull": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "47k ToF reset pull-down",
+      "quantity": 1
+    },
+    "tof_lpn_pull": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "47k ToF LPn pull-up",
+      "quantity": 1
+    },
+    "tof_irq_pull": {
+      "amount": 2,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-resistor small-quantity allowance, not a vendor quotation. Pack minimums may cost more than the allocated pieces.",
+      "name": "47k ToF INT pull-up",
+      "quantity": 1
+    },
+    "manual": {
+      "amount": 35,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "Manual cue button",
+      "quantity": 1
+    },
+    "sos": {
+      "amount": 35,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "SOS / cancel button",
+      "quantity": 1
+    },
+    "strap_switch": {
+      "amount": 20,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "Foot power switch",
+      "quantity": 1
+    },
+    "charge_port": {
+      "amount": 25,
+      "kind": "estimate",
+      "source": null,
+      "note": "Small-quantity build allowance; final vendor quote may vary.",
+      "name": "Foot USB charging port",
+      "quantity": 1
+    },
+    "pi_fuse": {
+      "amount": 200,
+      "kind": "estimate",
+      "source": null,
+      "note": "Protected Pi-branch switch/eFuse budget. Functional design block; exact rated device has not been selected.",
+      "name": "Pi branch eFuse / switch",
+      "quantity": 1
+    },
+    "aux_fuse": {
+      "amount": 80,
+      "kind": "estimate",
+      "source": null,
+      "note": "Auxiliary fuse and switch allowance; exact device selection follows current measurements.",
+      "name": "Auxiliary 1A fuse / switch",
+      "quantity": 1
+    },
+    "sensor_reg": {
+      "amount": 80,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-regulator assembly allowance; includes local reference passives, excluding the separate bare carrier.",
+      "name": "3.3V sensor regulator carrier",
+      "quantity": 1
+    },
+    "motor_reg": {
+      "amount": 80,
+      "kind": "estimate",
+      "source": null,
+      "note": "Per-regulator assembly allowance; includes local reference passives, excluding the separate bare carrier.",
+      "name": "3.0V actuator regulator carrier",
+      "quantity": 1
+    },
+    "driver_carrier": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": null,
+      "note": "Bare three-channel carrier PCB allowance only. Separately priced MOSFETs, diodes, resistors and regulators are excluded to avoid double counting.",
+      "name": "Three-channel actuator carrier",
+      "quantity": 1
+    },
+    "strap_carrier": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": null,
+      "note": "Bare ankle carrier PCB allowance only. Charger and regulator assemblies are priced separately.",
+      "name": "Ankle charging / regulation carrier",
+      "quantity": 1
+    },
+    "power_carrier": {
+      "amount": 120,
+      "kind": "estimate",
+      "source": null,
+      "note": "Bare power distribution PCB allowance only; protection devices priced separately.",
+      "name": "Protected power distribution carrier",
+      "quantity": 1
+    },
+    "harness": {
+      "amount": 600,
+      "kind": "estimate",
+      "source": "https://www.dnatechindia.com/raspberry-pi-5-camera-fpc-cable-200mm.html",
+      "note": "Cane harness allowance includes 20/24/28 AWG wire, connectors, a Pi 5 22-to-15-pin CSI cable and suitable USB-C cable. Final cable qualification is still required.",
+      "name": "Cane netlist harness",
+      "quantity": 1
+    },
+    "foot_harness": {
+      "amount": 80,
+      "kind": "estimate",
+      "source": null,
+      "note": "Ankle harness allowance for short wires and connectors; separate from the cane.",
+      "name": "Ankle netlist harness",
+      "quantity": 1
+    },
+    "shaft": {
+      "amount": 450,
+      "kind": "estimate",
+      "source": null,
+      "note": "Aluminium tube procurement and cutting allowance. Dimensions and load capacity need physical verification.",
+      "name": "Shaft",
+      "quantity": 1
+    },
+    "ferrule": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": null,
+      "note": "Replacement rubber cane-tip allowance; final shaft fit must be checked.",
+      "name": "Rubber ferrule",
+      "quantity": 1
+    },
+    "strap_band": {
+      "amount": 120,
+      "kind": "estimate",
+      "source": null,
+      "note": "Elastic band, fastening and attachment allowance.",
+      "name": "Elastic ankle strap",
+      "quantity": 1
+    },
+    "grip": {
+      "amount": 350,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Grip shell",
+      "quantity": 1
+    },
+    "control_shell": {
+      "amount": 350,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Control box",
+      "quantity": 1
+    },
+    "control_cover": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Removable control cover",
+      "quantity": 1
+    },
+    "ai_shell": {
+      "amount": 550,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "AI enclosure",
+      "quantity": 1
+    },
+    "ai_shell_cover": {
+      "amount": 150,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "AI enclosure · removable cover",
+      "quantity": 1
+    },
+    "camera_mount": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Camera optical bezel",
+      "quantity": 1
+    },
+    "laser_mount": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Laser clamp",
+      "quantity": 1
+    },
+    "bank_cradle": {
+      "amount": 350,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Powerbank retention cradle",
+      "quantity": 1
+    },
+    "ai_clamp_1": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Split shaft mounting collar",
+      "quantity": 1
+    },
+    "ai_clamp_2": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Split shaft mounting collar",
+      "quantity": 1
+    },
+    "bank_clamp_1": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Split shaft mounting collar",
+      "quantity": 1
+    },
+    "bank_clamp_2": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Split shaft mounting collar",
+      "quantity": 1
+    },
+    "strap_shell": {
+      "amount": 250,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Ankle electronics enclosure",
+      "quantity": 1
+    },
+    "strap_shell_cover": {
+      "amount": 100,
+      "kind": "estimate",
+      "source": "https://nexus3dprinting.com/services/",
+      "note": "Custom-part print allowance informed by published Indian FDM rates. No sliced mass, print time, finishing or vendor quote is established; this is not a fabrication price.",
+      "name": "Ankle electronics enclosure · removable cover",
+      "quantity": 1
+    }
+  }
+}

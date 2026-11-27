@@ -1,0 +1,3674 @@
+{
+  "schemaVersion": 1,
+  "units": "millimeter",
+  "status": "engineering proposal; not manufacturing release",
+  "components": {
+    "s3": {
+      "id": "s3",
+      "name": "ESP32-S3 N16R8",
+      "zone": "control",
+      "purpose": "Immediate sensor processing, BLE reception and local cue control.",
+      "asset": "s3",
+      "pins": {
+        "GPIO4": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO5": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO6": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO7": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO8": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO9": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO10": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO11": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO12": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO16": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO17": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "5V": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "GOOUUU file says N16R8, but its geometry names ESP32-S3-WROOM-2 and uses 21-pin header rows. Check the actual module and header map.",
+      "interfaces": [
+        "I2C",
+        "UART 3.3V",
+        "BLE",
+        "GPIO"
+      ],
+      "positionMm": [
+        0.0,
+        775.0,
+        33.0
+      ],
+      "dimensionsMm": [
+        28.003,
+        67.89,
+        13.5182
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "ESP32-S3-N16R8_GOOUUU_TECH (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": [
+        {
+          "mesh": "s3 \u00b7 PinHeader_1x21_P2.54mm_Vertical",
+          "positionMm": [
+            12.69,
+            773.385,
+            32.011
+          ]
+        },
+        {
+          "mesh": "s3 \u00b7 PinHeader_1x21_P2.54mm_Vertical.001",
+          "positionMm": [
+            -12.71,
+            773.385,
+            32.011
+          ]
+        }
+      ]
+    },
+    "pi": {
+      "id": "pi",
+      "name": "Raspberry Pi 5 \u00b7 4GB target",
+      "zone": "ai",
+      "purpose": "Onboard vision, experimental gait inference, local analytics and Wi-Fi alert requests.",
+      "asset": "pi",
+      "pins": {
+        "GPIO14_TX": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -26.58517,
+              562.18997,
+              66.838
+            ],
+            "verified": false,
+            "headerPin": 8,
+            "basis": "Raspberry Pi 40-pin header documentation and matching STEP pin geometry"
+          }
+        },
+        "GPIO15_RX": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -26.58517,
+              564.72996,
+              66.838
+            ],
+            "verified": false,
+            "headerPin": 10,
+            "basis": "Raspberry Pi 40-pin header documentation and matching STEP pin geometry"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -26.58517,
+              559.64997,
+              66.838
+            ],
+            "verified": false,
+            "headerPin": 6,
+            "basis": "Raspberry Pi 40-pin header documentation and matching STEP pin geometry"
+          }
+        },
+        "USB_C_5V": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": null
+        },
+        "CAM0": {
+          "voltage": null,
+          "kind": "ribbon",
+          "physical": null
+        },
+        "SD": {
+          "voltage": null,
+          "kind": "storage",
+          "physical": null
+        }
+      },
+      "identity": "Pi 5 CAD; RAM capacity not identifiable from geometry",
+      "interfaces": [
+        "UART 3.3V",
+        "CSI-2",
+        "Wi-Fi",
+        "microSD"
+      ],
+      "positionMm": [
+        0.0,
+        590.0,
+        65.0
+      ],
+      "dimensionsMm": [
+        57.6304,
+        88.5,
+        18.976
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "rpi-5b_with_graphics.step",
+      "terminalStatus": "Ground and UART mapped to Pi header pins 6, 8 and 10 in CAD. USB-C, CSI and microSD routing remain open.",
+      "contactCandidates": []
+    },
+    "camera": {
+      "id": "camera",
+      "name": "Camera Module 3 \u00b7 Wide target",
+      "zone": "ai",
+      "purpose": "Forward scene context for experimental doorway and obstacle recognition.",
+      "asset": "camera",
+      "pins": {
+        "CSI": {
+          "voltage": null,
+          "kind": "ribbon",
+          "physical": null
+        }
+      },
+      "identity": "Camera Module 3 source; Wide lens variant not verified from CAD",
+      "interfaces": [
+        "CSI-2 22-to-15-pin ribbon"
+      ],
+      "positionMm": [
+        0.0,
+        659.0,
+        80.0
+      ],
+      "dimensionsMm": [
+        25.0,
+        28.062,
+        11.3464
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Camera Moudule 3 v8 (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": []
+    },
+    "sd": {
+      "id": "sd",
+      "name": "64GB microSD",
+      "zone": "ai",
+      "purpose": "Operating system, models, calibration and event history.",
+      "asset": null,
+      "pins": {
+        "CONTACTS": {
+          "voltage": null,
+          "kind": "storage",
+          "physical": {
+            "positionMm": [
+              0.0,
+              541.50003,
+              57.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "microSD"
+      ],
+      "identity": "Proposed removable storage",
+      "positionMm": [
+        0.0,
+        544.0,
+        56.0
+      ],
+      "dimensionsMm": [
+        11.0,
+        15.0,
+        1.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "imu": {
+      "id": "imu",
+      "name": "GY-521 / MPU6050 \u00b7 cane",
+      "zone": "control",
+      "purpose": "Rigidly mounted 6-axis acceleration and angular-rate sensing.",
+      "asset": "imu",
+      "pins": {
+        "SDA": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "SCL": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "INT": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "VCC": {
+          "voltage": 3.3,
+          "kind": "power_in",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        },
+        "AD0": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "Breakout regulator and pull-ups need board inspection",
+      "interfaces": [
+        "I2C 0x68",
+        "interrupt"
+      ],
+      "positionMm": [
+        -18.0,
+        731.0,
+        30.0
+      ],
+      "dimensionsMm": [
+        21.0,
+        16.0,
+        3.8003
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "GY-521_MPU6050 Accelerometer (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": [
+        {
+          "mesh": "imu \u00b7 trou1",
+          "positionMm": [
+            -26.89,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou002",
+          "positionMm": [
+            -24.35,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou003",
+          "positionMm": [
+            -21.81,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou004",
+          "positionMm": [
+            -19.27,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou005",
+          "positionMm": [
+            -16.73,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou006",
+          "positionMm": [
+            -14.19,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou007",
+          "positionMm": [
+            -11.65,
+            724.1,
+            29.0
+          ]
+        },
+        {
+          "mesh": "imu \u00b7 trou008",
+          "positionMm": [
+            -9.11,
+            724.1,
+            29.0
+          ]
+        }
+      ]
+    },
+    "foot_imu": {
+      "id": "foot_imu",
+      "name": "GY-521 / MPU6050 \u00b7 ankle",
+      "zone": "strap",
+      "purpose": "Rigidly mounted 6-axis acceleration and angular-rate sensing.",
+      "asset": "imu",
+      "pins": {
+        "SDA": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "SCL": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "INT": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "VCC": {
+          "voltage": 3.3,
+          "kind": "power_in",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        },
+        "AD0": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "Breakout regulator and pull-ups need board inspection",
+      "interfaces": [
+        "I2C 0x68",
+        "interrupt"
+      ],
+      "positionMm": [
+        278.0,
+        130.0,
+        25.0
+      ],
+      "dimensionsMm": [
+        21.0,
+        16.0,
+        3.8003
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "GY-521_MPU6050 Accelerometer (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": [
+        {
+          "mesh": "foot_imu \u00b7 trou1",
+          "positionMm": [
+            269.11,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou002",
+          "positionMm": [
+            271.65,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou003",
+          "positionMm": [
+            274.19,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou004",
+          "positionMm": [
+            276.73,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou005",
+          "positionMm": [
+            279.27,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou006",
+          "positionMm": [
+            281.81,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou007",
+          "positionMm": [
+            284.35,
+            123.1,
+            24.0
+          ]
+        },
+        {
+          "mesh": "foot_imu \u00b7 trou008",
+          "positionMm": [
+            286.89,
+            123.1,
+            24.0
+          ]
+        }
+      ]
+    },
+    "tof": {
+      "id": "tof",
+      "name": "VL53L5CX breakout",
+      "zone": "control",
+      "purpose": "Coarse 8\u00d78 multizone time-of-flight distance sensing.",
+      "asset": "tof",
+      "pins": {
+        "SDA": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "SCL": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "INT": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "LPn": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "I2C_RST": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "VCC": {
+          "voltage": 3.3,
+          "kind": "power_in",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "Aliexpress breakout; 3.3V host compatibility is a release blocker",
+      "interfaces": [
+        "I2C 0x29",
+        "interrupt"
+      ],
+      "positionMm": [
+        0.0,
+        701.0,
+        56.0
+      ],
+      "dimensionsMm": [
+        25.0,
+        10.6,
+        10.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "TOF Sensor VL53L5CX (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": []
+    },
+    "laser": {
+      "id": "laser",
+      "name": "Line laser \u00b7 qualification pending",
+      "zone": "control",
+      "purpose": "Visual floor cue.",
+      "asset": "laser",
+      "pins": {
+        "PLUS": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              -37.35,
+              680.21584,
+              24.06416
+            ],
+            "verified": false,
+            "basis": "STEP lead color and terminal geometry; electrical rating unverified"
+          }
+        },
+        "MINUS": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              -34.65,
+              680.21584,
+              24.06416
+            ],
+            "verified": false,
+            "basis": "STEP lead color and terminal geometry; electrical rating unverified"
+          }
+        }
+      },
+      "identity": "Supply/current and optical class unverified; not released for energizing",
+      "interfaces": [
+        "Switched supply"
+      ],
+      "positionMm": [
+        -36.0,
+        660.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        12.0,
+        41.6749,
+        33.2691
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Line Laser (1).step",
+      "terminalStatus": "CAD lead endpoints located by color. Confirm polarity and electrical rating on the actual module.",
+      "contactCandidates": []
+    },
+    "buzzer": {
+      "id": "buzzer",
+      "name": "Active buzzer \u00b7 rating pending",
+      "zone": "control",
+      "purpose": "Auditory rhythmic / local alarm cue.",
+      "asset": "buzzer",
+      "pins": {
+        "PLUS": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": null
+        },
+        "MINUS": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": null
+        }
+      },
+      "identity": "Supply/current and optical class unverified; not released for energizing",
+      "interfaces": [
+        "Switched supply"
+      ],
+      "positionMm": [
+        19.0,
+        730.0,
+        53.0
+      ],
+      "dimensionsMm": [
+        11.9984,
+        11.9969,
+        13.5
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Active_Buzzer (2).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": []
+    },
+    "motor": {
+      "id": "motor",
+      "name": "10mm coin vibration motor",
+      "zone": "handle",
+      "purpose": "Tactile grip cue.",
+      "asset": "motor",
+      "pins": {
+        "PLUS": {
+          "voltage": 3.0,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              10.625,
+              889.24903,
+              -5.99065
+            ],
+            "verified": false,
+            "basis": "STEP lead color and terminal geometry; electrical rating unverified"
+          }
+        },
+        "MINUS": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              9.375,
+              889.24903,
+              -5.99065
+            ],
+            "verified": false,
+            "basis": "STEP lead color and terminal geometry; electrical rating unverified"
+          }
+        }
+      },
+      "identity": "Supply/current and optical class unverified; not released for energizing",
+      "interfaces": [
+        "Switched supply"
+      ],
+      "positionMm": [
+        10.0,
+        888.0,
+        2.0
+      ],
+      "dimensionsMm": [
+        10.0,
+        2.7,
+        15.9814
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Microdrive Haptic Motor (1).STEP",
+      "terminalStatus": "CAD lead endpoints located by color. Confirm polarity and electrical rating on the actual module.",
+      "contactCandidates": []
+    },
+    "manual": {
+      "id": "manual",
+      "name": "Manual cue button",
+      "zone": "handle",
+      "purpose": "Momentary active-low input; debounce in firmware.",
+      "asset": null,
+      "pins": {
+        "SIGNAL": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              61.365,
+              904.50001,
+              6.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              62.635,
+              904.50001,
+              6.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "GPIO with external 10k pull-up"
+      ],
+      "positionMm": [
+        62.0,
+        907.0,
+        5.0
+      ],
+      "dimensionsMm": [
+        8.0,
+        10.0,
+        8.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "sos": {
+      "id": "sos",
+      "name": "SOS / cancel button",
+      "zone": "handle",
+      "purpose": "Momentary active-low input; debounce in firmware.",
+      "asset": null,
+      "pins": {
+        "SIGNAL": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              91.365,
+              904.50001,
+              6.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              92.635,
+              904.50001,
+              6.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "GPIO with external 10k pull-up"
+      ],
+      "positionMm": [
+        92.0,
+        907.0,
+        5.0
+      ],
+      "dimensionsMm": [
+        8.0,
+        10.0,
+        8.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "c3": {
+      "id": "c3",
+      "name": "ESP32-C3 SuperMini",
+      "zone": "strap",
+      "purpose": "Reads ankle IMU and transmits gait samples over BLE. No wired link to cane.",
+      "asset": "c3",
+      "pins": {
+        "GPIO4": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO5": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "GPIO6": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": null
+        },
+        "3V3": {
+          "voltage": 3.3,
+          "kind": "power_in",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "SuperMini variant and pin-label orientation require continuity verification",
+      "interfaces": [
+        "I2C",
+        "BLE"
+      ],
+      "positionMm": [
+        255.0,
+        156.0,
+        25.0
+      ],
+      "dimensionsMm": [
+        17.8032,
+        24.0,
+        4.2
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "ESP32-C3 supermini v5 (1).step",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": []
+    },
+    "bank": {
+      "id": "bank",
+      "name": "Protected dual-output power bank \u00b7 selection pending",
+      "zone": "power",
+      "purpose": "Independent Pi and auxiliary regulated outputs; simultaneous load rating must be verified.",
+      "asset": "power",
+      "pins": {
+        "PI_5V": {
+          "voltage": 5,
+          "kind": "power_out",
+          "physical": null
+        },
+        "AUX_5V": {
+          "voltage": 5,
+          "kind": "power_out",
+          "physical": null
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": null
+        }
+      },
+      "identity": "Existing powerbank CAD retained; electrical rating unknown",
+      "interfaces": [
+        "USB-C PD 5V/5A target",
+        "auxiliary 5V/1A target"
+      ],
+      "positionMm": [
+        0.0,
+        430.0,
+        -34.0
+      ],
+      "dimensionsMm": [
+        67.46,
+        145.2575,
+        16.8045
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Powerbank (2).stp",
+      "terminalStatus": "Unmapped supplier CAD: routes withheld until pad identities are verified",
+      "contactCandidates": []
+    },
+    "battery": {
+      "id": "battery",
+      "name": "Protected 1S LiPo \u00b7 500mAh target",
+      "zone": "strap",
+      "purpose": "Independent ankle battery. Cell protection and charging limits require supplier verification.",
+      "asset": null,
+      "pins": {
+        "PLUS": {
+          "voltage": 4.2,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              265.365,
+              140.50001,
+              7.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "MINUS": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              266.635,
+              140.50001,
+              7.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "Protected 1S LiPo"
+      ],
+      "identity": "Proposed 40\u00d725\u00d75 mm maximum envelope; no supplier CAD",
+      "positionMm": [
+        266.0,
+        143.0,
+        6.0
+      ],
+      "dimensionsMm": [
+        40.0,
+        25.0,
+        5.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "charger": {
+      "id": "charger",
+      "name": "MCP73831 charger carrier",
+      "zone": "strap",
+      "purpose": "100mA charging target; wear power switched OFF during charging, no load sharing.",
+      "asset": null,
+      "pins": {
+        "USB5": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              236.73001,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "BAT": {
+          "voltage": 4.2,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              238.00001,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              239.27,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "5V USB input",
+        "1S 4.2V charge"
+      ],
+      "identity": "Proposed carrier; RPROG 10k, capacitors per datasheet, charge interlock required",
+      "positionMm": [
+        238.0,
+        123.0,
+        19.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "strap_reg": {
+      "id": "strap_reg",
+      "name": "TPS63031 3.3V buck-boost carrier",
+      "zone": "strap",
+      "purpose": "Regulates battery across discharge; C3 radio transient capacity requires bench testing.",
+      "asset": null,
+      "pins": {
+        "VIN": {
+          "voltage": 4.2,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              243.73001,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 3.3,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              245.0,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              246.27,
+              120.50001,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "1S input",
+        "3.3V target 300mA budget"
+      ],
+      "identity": "Proposed reference-design carrier, not PCB release",
+      "positionMm": [
+        245.0,
+        123.0,
+        19.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pi_fuse": {
+      "id": "pi_fuse",
+      "name": "Pi branch eFuse / switch",
+      "zone": "power",
+      "purpose": "Power distribution and protection; ratings require validation.",
+      "asset": null,
+      "pins": {
+        "IN": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              -13.27,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 5,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              -12.0,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -10.73,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "power"
+      ],
+      "identity": "Proposed carrier / component; exact procurement pending",
+      "positionMm": [
+        -12.0,
+        513.0,
+        -32.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "aux_fuse": {
+      "id": "aux_fuse",
+      "name": "Auxiliary 1A fuse / switch",
+      "zone": "power",
+      "purpose": "Power distribution and protection; ratings require validation.",
+      "asset": null,
+      "pins": {
+        "IN": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              -6.27,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 5,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              -5.0,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -3.73,
+              510.50001,
+              -30.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "power"
+      ],
+      "identity": "Proposed carrier / component; exact procurement pending",
+      "positionMm": [
+        -5.0,
+        513.0,
+        -32.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "sensor_reg": {
+      "id": "sensor_reg",
+      "name": "3.3V sensor regulator carrier",
+      "zone": "control",
+      "purpose": "Power distribution and protection; ratings require validation.",
+      "asset": null,
+      "pins": {
+        "IN": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              -18.27,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 3.3,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              -17.0,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -15.73,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "power"
+      ],
+      "identity": "Proposed carrier / component; exact procurement pending",
+      "positionMm": [
+        -17.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "motor_reg": {
+      "id": "motor_reg",
+      "name": "3.0V actuator regulator carrier",
+      "zone": "control",
+      "purpose": "Power distribution and protection; ratings require validation.",
+      "asset": null,
+      "pins": {
+        "IN": {
+          "voltage": 5,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              -12.27,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 3,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              -11.0,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -9.73,
+              703.50003,
+              36.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "power"
+      ],
+      "identity": "Proposed carrier / component; exact procurement pending",
+      "positionMm": [
+        -11.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        5.0,
+        5.0,
+        1.9
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "strap_switch": {
+      "id": "strap_switch",
+      "name": "Foot power switch",
+      "zone": "strap",
+      "purpose": "Power distribution and protection; ratings require validation.",
+      "asset": null,
+      "pins": {
+        "IN": {
+          "voltage": 4.2,
+          "kind": "power_in",
+          "physical": {
+            "positionMm": [
+              290.36501,
+              143.5,
+              21.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "OUT": {
+          "voltage": 4.2,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              291.63501,
+              143.5,
+              21.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "power"
+      ],
+      "identity": "Proposed carrier / component; exact procurement pending",
+      "positionMm": [
+        291.0,
+        146.0,
+        20.0
+      ],
+      "dimensionsMm": [
+        6.0,
+        8.0,
+        5.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "tof_reset_pull": {
+      "id": "tof_reset_pull",
+      "name": "47k ToF reset pull-down",
+      "zone": "control",
+      "purpose": "Active-high I2C reset held low per ST datasheet; check existing breakout resistors.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -5.65,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -4.35,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 47000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -5.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "tof_lpn_pull": {
+      "id": "tof_lpn_pull",
+      "name": "47k ToF LPn pull-up",
+      "zone": "control",
+      "purpose": "Populate only if not present on selected breakout.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              0.35,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              1.65,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 47000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        1.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "tof_irq_pull": {
+      "id": "tof_irq_pull",
+      "name": "47k ToF INT pull-up",
+      "zone": "control",
+      "purpose": "Populate only if not present on selected breakout.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              6.35,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              7.65,
+              706.00003,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 47000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        7.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "q_laser": {
+      "id": "q_laser",
+      "name": "AO3400A \u00b7 laser low-side MOSFET",
+      "zone": "control",
+      "purpose": "3.3V gate-compatible low-side load switch; never drive load directly from MCU.",
+      "asset": null,
+      "pins": {
+        "G": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              12.05,
+              705.00004,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "D": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              13.0,
+              707.00002,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "S": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              13.95,
+              705.00004,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "SOT-23: G1 S2 D3"
+      ],
+      "identity": "Proposed AO3400A, dissipation and stall current pending",
+      "positionMm": [
+        13.0,
+        706.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        2.9,
+        3.0,
+        1.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rg_laser": {
+      "id": "rg_laser",
+      "name": "Gate resistor \u00b7 laser",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -17.65,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -16.35,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -17.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rpd_laser": {
+      "id": "rpd_laser",
+      "name": "Gate pull-down \u00b7 laser",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100000 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -11.65,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -10.35,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -11.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "q_buzzer": {
+      "id": "q_buzzer",
+      "name": "AO3400A \u00b7 buzzer low-side MOSFET",
+      "zone": "control",
+      "purpose": "3.3V gate-compatible low-side load switch; never drive load directly from MCU.",
+      "asset": null,
+      "pins": {
+        "G": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -5.95,
+              711.00003,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "D": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              -5.0,
+              713.0,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "S": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -4.05,
+              711.00003,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "SOT-23: G1 S2 D3"
+      ],
+      "identity": "Proposed AO3400A, dissipation and stall current pending",
+      "positionMm": [
+        -5.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        2.9,
+        3.0,
+        1.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rg_buzzer": {
+      "id": "rg_buzzer",
+      "name": "Gate resistor \u00b7 buzzer",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              0.35,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              1.65,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        1.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rpd_buzzer": {
+      "id": "rpd_buzzer",
+      "name": "Gate pull-down \u00b7 buzzer",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100000 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              6.35,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              7.65,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        7.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "d_buzzer": {
+      "id": "d_buzzer",
+      "name": "1N5819 flyback diode \u00b7 buzzer",
+      "zone": "control",
+      "purpose": "Cathode to positive rail; anode to switched load return.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              12.35,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "K": {
+          "voltage": null,
+          "kind": "passive",
+          "physical": {
+            "positionMm": [
+              13.65,
+              712.00001,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "diode"
+      ],
+      "identity": "Proposed diode; confirm actuator inductance/current",
+      "positionMm": [
+        13.0,
+        712.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "q_motor": {
+      "id": "q_motor",
+      "name": "AO3400A \u00b7 motor low-side MOSFET",
+      "zone": "control",
+      "purpose": "3.3V gate-compatible low-side load switch; never drive load directly from MCU.",
+      "asset": null,
+      "pins": {
+        "G": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -17.95,
+              717.00001,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "D": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              -17.0,
+              718.99998,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "S": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -16.05,
+              717.00001,
+              35.1
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "SOT-23: G1 S2 D3"
+      ],
+      "identity": "Proposed AO3400A, dissipation and stall current pending",
+      "positionMm": [
+        -17.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        2.9,
+        3.0,
+        1.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rg_motor": {
+      "id": "rg_motor",
+      "name": "Gate resistor \u00b7 motor",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -11.65,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -10.35,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -11.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "rpd_motor": {
+      "id": "rpd_motor",
+      "name": "Gate pull-down \u00b7 motor",
+      "zone": "control",
+      "purpose": "Gate conditioning; 100000 ohm.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -5.65,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              -4.35,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 100000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -5.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "d_motor": {
+      "id": "d_motor",
+      "name": "1N5819 flyback diode \u00b7 motor",
+      "zone": "control",
+      "purpose": "Cathode to positive rail; anode to switched load return.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": null,
+          "kind": "load_return",
+          "physical": {
+            "positionMm": [
+              0.35,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "K": {
+          "voltage": null,
+          "kind": "passive",
+          "physical": {
+            "positionMm": [
+              1.65,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "diode"
+      ],
+      "identity": "Proposed diode; confirm actuator inductance/current",
+      "positionMm": [
+        1.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_cane_sda": {
+      "id": "pull_cane_sda",
+      "name": "2.2k cane I2C pull-up \u00b7 CANE_SDA",
+      "zone": "control",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              6.35,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              7.65,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 2200,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        7.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_cane_scl": {
+      "id": "pull_cane_scl",
+      "name": "2.2k cane I2C pull-up \u00b7 CANE_SCL",
+      "zone": "control",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              12.35,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              13.65,
+              717.99999,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 2200,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        13.0,
+        718.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_foot_sda": {
+      "id": "pull_foot_sda",
+      "name": "4.7k ankle I2C pull-up \u00b7 FOOT_SDA",
+      "zone": "strap",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              251.35002,
+              123.0,
+              19.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              252.64999,
+              123.0,
+              19.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 4700,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        252.0,
+        123.0,
+        19.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_foot_scl": {
+      "id": "pull_foot_scl",
+      "name": "4.7k ankle I2C pull-up \u00b7 FOOT_SCL",
+      "zone": "strap",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              258.35001,
+              123.0,
+              19.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              259.64999,
+              123.0,
+              19.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 4700,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        259.0,
+        123.0,
+        19.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_manual_input": {
+      "id": "pull_manual_input",
+      "name": "10k button pull-up \u00b7 MANUAL_INPUT",
+      "zone": "control",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -17.65,
+              724.00004,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -16.35,
+              724.00004,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 10000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -17.0,
+        724.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "pull_sos_input": {
+      "id": "pull_sos_input",
+      "name": "10k button pull-up \u00b7 SOS_INPUT",
+      "zone": "control",
+      "purpose": "Populate only after checking existing parallel board pull-ups.",
+      "asset": null,
+      "pins": {
+        "A": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -11.65,
+              724.00004,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "B": {
+          "voltage": 3.3,
+          "kind": "signal",
+          "physical": {
+            "positionMm": [
+              -10.35,
+              724.00004,
+              35.325
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "valueOhm": 10000,
+      "interfaces": [
+        "passive"
+      ],
+      "positionMm": [
+        -11.0,
+        724.0,
+        35.0
+      ],
+      "dimensionsMm": [
+        1.6,
+        0.85,
+        0.65
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    },
+    "charge_port": {
+      "id": "charge_port",
+      "name": "Foot USB charging port",
+      "zone": "strap",
+      "purpose": "5V charge-only input; switch wearable electronics off during charge.",
+      "asset": null,
+      "pins": {
+        "5V": {
+          "voltage": 5,
+          "kind": "power_out",
+          "physical": {
+            "positionMm": [
+              265.365,
+              111.5,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        },
+        "GND": {
+          "voltage": 0,
+          "kind": "ground",
+          "physical": {
+            "positionMm": [
+              266.635,
+              111.5,
+              20.5
+            ],
+            "verified": false,
+            "basis": "Proposed carrier solder land; PCB layout pending"
+          }
+        }
+      },
+      "interfaces": [
+        "USB 5V"
+      ],
+      "positionMm": [
+        266.0,
+        114.0,
+        19.0
+      ],
+      "dimensionsMm": [
+        9.0,
+        7.0,
+        4.0
+      ],
+      "rotationRadians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "Proposed custom geometry; procurement / board layout pending",
+      "terminalStatus": "Proposed custom solder lands; layout review pending"
+    }
+  },
+  "nets": [
+    {
+      "id": "MAIN_PI_INPUT",
+      "category": "power",
+      "voltage": 5,
+      "endpoints": [
+        {
+          "component": "bank",
+          "terminal": "PI_5V"
+        },
+        {
+          "component": "pi_fuse",
+          "terminal": "IN"
+        }
+      ],
+      "notes": "",
+      "status": "proposed",
+      "wireAwg": 20
+    },
+    {
+      "id": "PI_REGULATED_5V",
+      "category": "power",
+      "voltage": 5,
+      "endpoints": [
+        {
+          "component": "pi_fuse",
+          "terminal": "OUT"
+        },
+        {
+          "component": "pi",
+          "terminal": "USB_C_5V"
+        }
+      ],
+      "notes": "Use rated USB-C cable preserving required PD/CC negotiation; never splice or assume 5A negotiation.",
+      "status": "proposed",
+      "wireAwg": 20
+    },
+    {
+      "id": "AUX_INPUT",
+      "category": "power",
+      "voltage": 5,
+      "endpoints": [
+        {
+          "component": "bank",
+          "terminal": "AUX_5V"
+        },
+        {
+          "component": "aux_fuse",
+          "terminal": "IN"
+        }
+      ],
+      "notes": "",
+      "status": "proposed",
+      "wireAwg": 24
+    },
+    {
+      "id": "CANE_5V",
+      "category": "power",
+      "voltage": 5,
+      "endpoints": [
+        {
+          "component": "aux_fuse",
+          "terminal": "OUT"
+        },
+        {
+          "component": "s3",
+          "terminal": "5V"
+        },
+        {
+          "component": "sensor_reg",
+          "terminal": "IN"
+        },
+        {
+          "component": "motor_reg",
+          "terminal": "IN"
+        },
+        {
+          "component": "laser",
+          "terminal": "PLUS"
+        },
+        {
+          "component": "buzzer",
+          "terminal": "PLUS"
+        },
+        {
+          "component": "d_buzzer",
+          "terminal": "K"
+        }
+      ],
+      "notes": "Laser and buzzer supply CONDITIONAL on module qualification.",
+      "status": "proposed",
+      "wireAwg": 24
+    },
+    {
+      "id": "SENSOR_3V3",
+      "category": "power",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "sensor_reg",
+          "terminal": "OUT"
+        },
+        {
+          "component": "imu",
+          "terminal": "VCC"
+        },
+        {
+          "component": "tof",
+          "terminal": "VCC"
+        },
+        {
+          "component": "tof_lpn_pull",
+          "terminal": "B"
+        },
+        {
+          "component": "tof_irq_pull",
+          "terminal": "B"
+        },
+        {
+          "component": "pull_cane_sda",
+          "terminal": "B"
+        },
+        {
+          "component": "pull_cane_scl",
+          "terminal": "B"
+        },
+        {
+          "component": "pull_manual_input",
+          "terminal": "B"
+        },
+        {
+          "component": "pull_sos_input",
+          "terminal": "B"
+        }
+      ],
+      "notes": "ToF breakout compatibility pending; LPn held high. Regulator design pending.",
+      "status": "proposed",
+      "wireAwg": 28
+    },
+    {
+      "id": "MOTOR_3V0",
+      "category": "power",
+      "voltage": 3,
+      "endpoints": [
+        {
+          "component": "motor_reg",
+          "terminal": "OUT"
+        },
+        {
+          "component": "motor",
+          "terminal": "PLUS"
+        },
+        {
+          "component": "d_motor",
+          "terminal": "K"
+        }
+      ],
+      "notes": "Verify motor 310-103 operating rating before energizing.",
+      "status": "proposed",
+      "wireAwg": 28
+    },
+    {
+      "id": "CANE_SDA",
+      "category": "i2c_sda",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO8"
+        },
+        {
+          "component": "imu",
+          "terminal": "SDA"
+        },
+        {
+          "component": "tof",
+          "terminal": "SDA"
+        },
+        {
+          "component": "pull_cane_sda",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "CANE_SCL",
+      "category": "i2c_scl",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO9"
+        },
+        {
+          "component": "imu",
+          "terminal": "SCL"
+        },
+        {
+          "component": "tof",
+          "terminal": "SCL"
+        },
+        {
+          "component": "pull_cane_scl",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "TOF_IRQ",
+      "category": "interrupt",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "tof",
+          "terminal": "INT"
+        },
+        {
+          "component": "s3",
+          "terminal": "GPIO4"
+        },
+        {
+          "component": "tof_irq_pull",
+          "terminal": "A"
+        }
+      ],
+      "notes": "Configure input and confirm breakout pull-up voltage.",
+      "status": "proposed"
+    },
+    {
+      "id": "CANE_IMU_IRQ",
+      "category": "interrupt",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "imu",
+          "terminal": "INT"
+        },
+        {
+          "component": "s3",
+          "terminal": "GPIO5"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "TOF_RESET_LOW",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "tof",
+          "terminal": "I2C_RST"
+        },
+        {
+          "component": "tof_reset_pull",
+          "terminal": "A"
+        }
+      ],
+      "notes": "47k pull-down to common ground; verify breakout exposes pin.",
+      "status": "proposed"
+    },
+    {
+      "id": "TOF_LPN_ENABLE",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "tof",
+          "terminal": "LPn"
+        },
+        {
+          "component": "tof_lpn_pull",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "PI_TX_TO_S3_RX",
+      "category": "uart",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "pi",
+          "terminal": "GPIO14_TX"
+        },
+        {
+          "component": "s3",
+          "terminal": "GPIO17"
+        }
+      ],
+      "notes": "Pi header physical pin 8 \u2192 proposed S3 GPIO17. Configure UART GPIO matrix explicitly.",
+      "status": "proposed"
+    },
+    {
+      "id": "S3_TX_TO_PI_RX",
+      "category": "uart",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO16"
+        },
+        {
+          "component": "pi",
+          "terminal": "GPIO15_RX"
+        }
+      ],
+      "notes": "S3 GPIO16 \u2192 Pi physical pin 10. Enable Pi5 header UART overlay and disable console.",
+      "status": "proposed"
+    },
+    {
+      "id": "MANUAL_INPUT",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO11"
+        },
+        {
+          "component": "manual",
+          "terminal": "SIGNAL"
+        },
+        {
+          "component": "pull_manual_input",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "SOS_INPUT",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO12"
+        },
+        {
+          "component": "sos",
+          "terminal": "SIGNAL"
+        },
+        {
+          "component": "pull_sos_input",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "LASER_CONTROL",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO6"
+        },
+        {
+          "component": "rg_laser",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "LASER_GATE",
+      "category": "driver",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "rg_laser",
+          "terminal": "B"
+        },
+        {
+          "component": "q_laser",
+          "terminal": "G"
+        },
+        {
+          "component": "rpd_laser",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "LASER_SWITCHED_RETURN",
+      "category": "driver",
+      "voltage": null,
+      "endpoints": [
+        {
+          "component": "q_laser",
+          "terminal": "D"
+        },
+        {
+          "component": "laser",
+          "terminal": "MINUS"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "BUZZER_CONTROL",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO7"
+        },
+        {
+          "component": "rg_buzzer",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "BUZZER_GATE",
+      "category": "driver",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "rg_buzzer",
+          "terminal": "B"
+        },
+        {
+          "component": "q_buzzer",
+          "terminal": "G"
+        },
+        {
+          "component": "rpd_buzzer",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "BUZZER_SWITCHED_RETURN",
+      "category": "driver",
+      "voltage": null,
+      "endpoints": [
+        {
+          "component": "q_buzzer",
+          "terminal": "D"
+        },
+        {
+          "component": "buzzer",
+          "terminal": "MINUS"
+        },
+        {
+          "component": "d_buzzer",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "MOTOR_CONTROL",
+      "category": "gpio",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GPIO10"
+        },
+        {
+          "component": "rg_motor",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "MOTOR_GATE",
+      "category": "driver",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "rg_motor",
+          "terminal": "B"
+        },
+        {
+          "component": "q_motor",
+          "terminal": "G"
+        },
+        {
+          "component": "rpd_motor",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "MOTOR_SWITCHED_RETURN",
+      "category": "driver",
+      "voltage": null,
+      "endpoints": [
+        {
+          "component": "q_motor",
+          "terminal": "D"
+        },
+        {
+          "component": "motor",
+          "terminal": "MINUS"
+        },
+        {
+          "component": "d_motor",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "FOOT_BATTERY",
+      "category": "power",
+      "voltage": 4.2,
+      "endpoints": [
+        {
+          "component": "battery",
+          "terminal": "PLUS"
+        },
+        {
+          "component": "charger",
+          "terminal": "BAT"
+        },
+        {
+          "component": "strap_switch",
+          "terminal": "IN"
+        }
+      ],
+      "notes": "Protected cell only. Switch OFF during charging.",
+      "status": "proposed",
+      "wireAwg": 28
+    },
+    {
+      "id": "FOOT_SWITCHED_BATTERY",
+      "category": "power",
+      "voltage": 4.2,
+      "endpoints": [
+        {
+          "component": "strap_switch",
+          "terminal": "OUT"
+        },
+        {
+          "component": "strap_reg",
+          "terminal": "VIN"
+        }
+      ],
+      "notes": "",
+      "status": "proposed",
+      "wireAwg": 28
+    },
+    {
+      "id": "FOOT_3V3",
+      "category": "power",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "strap_reg",
+          "terminal": "OUT"
+        },
+        {
+          "component": "c3",
+          "terminal": "3V3"
+        },
+        {
+          "component": "foot_imu",
+          "terminal": "VCC"
+        },
+        {
+          "component": "pull_foot_sda",
+          "terminal": "B"
+        },
+        {
+          "component": "pull_foot_scl",
+          "terminal": "B"
+        }
+      ],
+      "notes": "Never connect USB and external 3V3 until SuperMini backfeed paths are verified.",
+      "status": "proposed"
+    },
+    {
+      "id": "FOOT_SDA",
+      "category": "i2c_sda",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "c3",
+          "terminal": "GPIO4"
+        },
+        {
+          "component": "foot_imu",
+          "terminal": "SDA"
+        },
+        {
+          "component": "pull_foot_sda",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "FOOT_SCL",
+      "category": "i2c_scl",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "c3",
+          "terminal": "GPIO5"
+        },
+        {
+          "component": "foot_imu",
+          "terminal": "SCL"
+        },
+        {
+          "component": "pull_foot_scl",
+          "terminal": "A"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "FOOT_IMU_IRQ",
+      "category": "interrupt",
+      "voltage": 3.3,
+      "endpoints": [
+        {
+          "component": "c3",
+          "terminal": "GPIO6"
+        },
+        {
+          "component": "foot_imu",
+          "terminal": "INT"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "FOOT_CHARGE_5V",
+      "category": "power",
+      "voltage": 5,
+      "endpoints": [
+        {
+          "component": "charge_port",
+          "terminal": "5V"
+        },
+        {
+          "component": "charger",
+          "terminal": "USB5"
+        }
+      ],
+      "notes": "",
+      "status": "proposed"
+    },
+    {
+      "id": "CANE_GND",
+      "category": "ground",
+      "voltage": 0,
+      "endpoints": [
+        {
+          "component": "s3",
+          "terminal": "GND"
+        },
+        {
+          "component": "pi",
+          "terminal": "GND"
+        },
+        {
+          "component": "imu",
+          "terminal": "GND"
+        },
+        {
+          "component": "imu",
+          "terminal": "AD0"
+        },
+        {
+          "component": "tof",
+          "terminal": "GND"
+        },
+        {
+          "component": "manual",
+          "terminal": "GND"
+        },
+        {
+          "component": "sos",
+          "terminal": "GND"
+        },
+        {
+          "component": "bank",
+          "terminal": "GND"
+        },
+        {
+          "component": "pi_fuse",
+          "terminal": "GND"
+        },
+        {
+          "component": "aux_fuse",
+          "terminal": "GND"
+        },
+        {
+          "component": "sensor_reg",
+          "terminal": "GND"
+        },
+        {
+          "component": "motor_reg",
+          "terminal": "GND"
+        },
+        {
+          "component": "tof_reset_pull",
+          "terminal": "B"
+        },
+        {
+          "component": "q_laser",
+          "terminal": "S"
+        },
+        {
+          "component": "rpd_laser",
+          "terminal": "B"
+        },
+        {
+          "component": "q_buzzer",
+          "terminal": "S"
+        },
+        {
+          "component": "rpd_buzzer",
+          "terminal": "B"
+        },
+        {
+          "component": "q_motor",
+          "terminal": "S"
+        },
+        {
+          "component": "rpd_motor",
+          "terminal": "B"
+        }
+      ],
+      "notes": "",
+      "status": "proposed",
+      "wireAwg": 26
+    },
+    {
+      "id": "FOOT_GND",
+      "category": "ground",
+      "voltage": 0,
+      "endpoints": [
+        {
+          "component": "foot_imu",
+          "terminal": "GND"
+        },
+        {
+          "component": "foot_imu",
+          "terminal": "AD0"
+        },
+        {
+          "component": "c3",
+          "terminal": "GND"
+        },
+        {
+          "component": "battery",
+          "terminal": "MINUS"
+        },
+        {
+          "component": "charger",
+          "terminal": "GND"
+        },
+        {
+          "component": "strap_reg",
+          "terminal": "GND"
+        },
+        {
+          "component": "charge_port",
+          "terminal": "GND"
+        }
+      ],
+      "notes": "",
+      "status": "proposed",
+      "wireAwg": 26
+    },
+    {
+      "id": "CAMERA_CSI",
+      "category": "ribbon",
+      "voltage": null,
+      "endpoints": [
+        {
+          "component": "pi",
+          "terminal": "CAM0"
+        },
+        {
+          "component": "camera",
+          "terminal": "CSI"
+        }
+      ],
+      "notes": "22-pin 0.5mm Pi5 to 15-pin 1mm camera ribbon, correct contact orientation; not GPIO wires.",
+      "status": "proposed"
+    },
+    {
+      "id": "LOCAL_STORAGE",
+      "category": "storage",
+      "voltage": null,
+      "endpoints": [
+        {
+          "component": "pi",
+          "terminal": "SD"
+        },
+        {
+          "component": "sd",
+          "terminal": "CONTACTS"
+        }
+      ],
+      "notes": "Board slot contact group; not external wire.",
+      "status": "proposed"
+    }
+  ],
+  "wireless": [
+    {
+      "id": "ANKLE_BLE",
+      "source": "c3",
+      "destination": "s3",
+      "protocol": "BLE",
+      "physicalWire": false
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "Adaptive multimodal cues",
+      "components": [
+        "imu",
+        "foot_imu",
+        "s3",
+        "pi",
+        "laser",
+        "buzzer",
+        "motor"
+      ],
+      "description": "Configured preferences and experimentally measured responses guide visual, auditory and tactile cue selection. Local S3 cueing remains available without the Pi."
+    },
+    {
+      "id": 2,
+      "name": "Foot + cane sensor fusion",
+      "components": [
+        "foot_imu",
+        "c3",
+        "s3",
+        "imu",
+        "pi"
+      ],
+      "description": "Ankle IMU \u2192 C3 \u2192 wireless BLE \u2192 S3; cane IMU joins the stream. Timestamp alignment and packet-loss handling require firmware validation."
+    },
+    {
+      "id": 3,
+      "name": "Fall detection & caregiver alerts",
+      "components": [
+        "foot_imu",
+        "imu",
+        "s3",
+        "pi",
+        "buzzer",
+        "sos"
+      ],
+      "description": "Suspected fall \u2192 local alarm \u2192 confirmation / cancel interval \u2192 Wi-Fi notification request. Offline: retain local alarm and queue event. Delivery is not guaranteed."
+    },
+    {
+      "id": 4,
+      "name": "Gait analytics",
+      "components": [
+        "foot_imu",
+        "c3",
+        "imu",
+        "s3",
+        "pi",
+        "sd"
+      ],
+      "description": "Step timing, variability and event history are intended analytics. The animation illustrates data flow; no live patient data or analytics engine is connected."
+    },
+    {
+      "id": 5,
+      "name": "Experimental freezing prediction",
+      "components": [
+        "foot_imu",
+        "c3",
+        "imu",
+        "s3",
+        "pi",
+        "laser",
+        "motor",
+        "buzzer"
+      ],
+      "description": "Movement features \u2192 experimental model inference \u2192 configured cue. No trained model or clinical validation is supplied; prediction performance is unestablished."
+    },
+    {
+      "id": 6,
+      "name": "Context-aware assistance",
+      "components": [
+        "camera",
+        "tof",
+        "pi",
+        "s3",
+        "buzzer",
+        "motor"
+      ],
+      "description": "Camera scene interpretation plus coarse ToF distance sensing informs experimental assistance. FOV follows cane tilt; this is not validated safe navigation."
+    }
+  ],
+  "colors": {
+    "power": "#ed655e",
+    "ground": "#20232a",
+    "i2c_sda": "#e3c75d",
+    "i2c_scl": "#659eea",
+    "gpio": "#79bd9c",
+    "uart": "#e39a58",
+    "interrupt": "#e39a58",
+    "driver": "#79bd9c",
+    "ribbon": "#bcab96",
+    "storage": "#9da7b3"
+  },
+  "releaseBlockers": [
+    "The GOOUUU S3 module identity conflicts with its filename. Confirm both controller variants and header maps.",
+    "ToF breakout supply and pull-up compatibility unverified",
+    "Powerbank output, protection and simultaneous PD rating unknown",
+    "Laser optical class and module supply unknown; keep disabled",
+    "Camera Wide lens identity unverified",
+    "All new carrier PCBs require schematic/layout review and procurement",
+    "Illustrative cane source requires dimensioned mechanical reference",
+    "Thermal, load-bearing, clinical and firmware performance not validated"
+  ]
+}

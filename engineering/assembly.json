@@ -1,0 +1,1865 @@
+{
+  "shaft": {
+    "id": "shaft",
+    "name": "Shaft",
+    "zone": "structure",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.4686000347137451,
+      -2.0483158280626412e-08
+    ],
+    "explodeOffset": [
+      0,
+      0,
+      0
+    ],
+    "source": "Existing GLB structure",
+    "boundsMeters": [
+      [
+        -0.01826000027358532,
+        0.06599998474121094,
+        -0.018259981647133827
+      ],
+      [
+        0.01826000027358532,
+        0.8712000846862793,
+        0.01826002635061741
+      ]
+    ]
+  },
+  "ferrule": {
+    "id": "ferrule",
+    "name": "Rubber ferrule",
+    "zone": "structure",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.032999999821186066,
+      -1.4424758054687459e-09
+    ],
+    "explodeOffset": [
+      0.0,
+      -0.07,
+      0.0
+    ],
+    "source": "Existing GLB structure",
+    "boundsMeters": [
+      [
+        -0.020019998773932457,
+        -1.0022208840609892e-08,
+        -0.020020002499222755
+      ],
+      [
+        0.020019998773932457,
+        0.06600000709295273,
+        0.020020004361867905
+      ]
+    ]
+  },
+  "grip": {
+    "id": "grip",
+    "name": "Grip shell",
+    "zone": "structure",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.8866000175476074,
+      -3.875451781709671e-08
+    ],
+    "explodeOffset": [
+      0.1,
+      0.08,
+      0.0
+    ],
+    "source": "Existing GLB structure",
+    "boundsMeters": [
+      [
+        -0.05754733458161354,
+        0.8370999693870544,
+        -0.025080043822526932
+      ],
+      [
+        0.1264999955892563,
+        0.9248471260070801,
+        0.025079967454075813
+      ]
+    ]
+  },
+  "control_shell": {
+    "id": "control_shell",
+    "name": "Control box",
+    "zone": "control",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.7524000406265259,
+      0.03079996630549431
+    ],
+    "explodeOffset": [
+      -0.1,
+      0.0,
+      0.0
+    ],
+    "source": "Existing GLB structure",
+    "boundsMeters": [
+      [
+        -0.03519999980926514,
+        0.6863999962806702,
+        0.010449953377246857
+      ],
+      [
+        0.03519999980926514,
+        0.8184000849723816,
+        0.054999981075525284
+      ]
+    ]
+  },
+  "control_cover": {
+    "id": "control_cover",
+    "name": "Removable control cover",
+    "zone": "control",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.7524000406265259,
+      0.03079996630549431
+    ],
+    "explodeOffset": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "source": "Existing GLB structure",
+    "boundsMeters": [
+      [
+        -0.03519999980926514,
+        0.6863999962806702,
+        0.054449960589408875
+      ],
+      [
+        0.03519999980926514,
+        0.8184000849723816,
+        0.06269997358322144
+      ]
+    ]
+  },
+  "s3": {
+    "id": "s3",
+    "name": "ESP32-S3 N16R8",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.7749999761581421,
+      0.032999999821186066
+    ],
+    "explodeOffset": [
+      0.1,
+      0.035,
+      0.07
+    ],
+    "source": "ESP32-S3-N16R8_GOOUUU_TECH (1).step",
+    "boundsMeters": [
+      [
+        -0.014001499861478806,
+        0.7410549521446228,
+        0.02624090015888214
+      ],
+      [
+        0.014001499861478806,
+        0.8089450001716614,
+        0.03975909948348999
+      ]
+    ]
+  },
+  "imu": {
+    "id": "imu",
+    "name": "GY-521 / MPU6050 \u00b7 cane",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.017999999225139618,
+      0.7310000061988831,
+      0.029999999329447746
+    ],
+    "explodeOffset": [
+      -0.1,
+      -0.01,
+      0.08
+    ],
+    "source": "GY-521_MPU6050 Accelerometer (1).step",
+    "boundsMeters": [
+      [
+        -0.028499998152256012,
+        0.7229999899864197,
+        0.02809985540807247
+      ],
+      [
+        -0.007499999366700649,
+        0.7390000224113464,
+        0.03190014511346817
+      ]
+    ]
+  },
+  "tof": {
+    "id": "tof",
+    "name": "VL53L5CX breakout",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.7009999752044678,
+      0.0560000017285347
+    ],
+    "explodeOffset": [
+      0.09,
+      -0.03,
+      0.08
+    ],
+    "source": "TOF Sensor VL53L5CX (1).step",
+    "boundsMeters": [
+      [
+        -0.012500000186264515,
+        0.6956999897956848,
+        0.05067500099539757
+      ],
+      [
+        0.012500000186264515,
+        0.7062999606132507,
+        0.06132500246167183
+      ]
+    ]
+  },
+  "motor": {
+    "id": "motor",
+    "name": "10mm coin vibration motor",
+    "zone": "handle",
+    "shell": false,
+    "assembledPosition": [
+      0.009999999776482582,
+      0.8880000114440918,
+      0.0020000000949949026
+    ],
+    "explodeOffset": [
+      -0.06,
+      0.1,
+      0.06
+    ],
+    "source": "Microdrive Haptic Motor (1).STEP",
+    "boundsMeters": [
+      [
+        0.004999999888241291,
+        0.886650025844574,
+        -0.005990681238472462
+      ],
+      [
+        0.014999999664723873,
+        0.8893499970436096,
+        0.009990681894123554
+      ]
+    ]
+  },
+  "laser": {
+    "id": "laser",
+    "name": "Line laser \u00b7 qualification pending",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.035999998450279236,
+      0.6600000262260437,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.1,
+      -0.04,
+      0.07
+    ],
+    "source": "Line Laser (1).step",
+    "boundsMeters": [
+      [
+        -0.041999999433755875,
+        0.6385409832000732,
+        0.020500019192695618
+      ],
+      [
+        -0.029999997466802597,
+        0.6802158355712891,
+        0.05376911535859108
+      ]
+    ]
+  },
+  "buzzer": {
+    "id": "buzzer",
+    "name": "Active buzzer \u00b7 rating pending",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.01899999938905239,
+      0.7300000190734863,
+      0.05299999937415123
+    ],
+    "explodeOffset": [
+      0.08,
+      -0.005,
+      0.1
+    ],
+    "source": "Active_Buzzer (2).step",
+    "boundsMeters": [
+      [
+        0.013000777922570705,
+        0.7240015864372253,
+        0.04625000059604645
+      ],
+      [
+        0.024999219924211502,
+        0.7359984517097473,
+        0.05974999815225601
+      ]
+    ]
+  },
+  "pi": {
+    "id": "pi",
+    "name": "Raspberry Pi 5 \u00b7 4GB target",
+    "zone": "ai",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.5899999737739563,
+      0.06499999761581421
+    ],
+    "explodeOffset": [
+      0.12,
+      0.0,
+      0.1
+    ],
+    "source": "rpi-5b_with_graphics.step",
+    "boundsMeters": [
+      [
+        -0.028815176337957382,
+        0.5457499623298645,
+        0.055511996150016785
+      ],
+      [
+        0.028815176337957382,
+        0.6342499852180481,
+        0.07448799908161163
+      ]
+    ]
+  },
+  "camera": {
+    "id": "camera",
+    "name": "Camera Module 3 \u00b7 Wide target",
+    "zone": "ai",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.6589999794960022,
+      0.07999999821186066
+    ],
+    "explodeOffset": [
+      0.1,
+      0.06,
+      0.12
+    ],
+    "source": "Camera Moudule 3 v8 (1).step",
+    "boundsMeters": [
+      [
+        -0.012500000186264515,
+        0.6449689865112305,
+        0.07432682067155838
+      ],
+      [
+        0.012500000186264515,
+        0.6730309724807739,
+        0.08567317575216293
+      ]
+    ]
+  },
+  "bank": {
+    "id": "bank",
+    "name": "Protected dual-output power bank \u00b7 selection pending",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.4300000071525574,
+      -0.03400000184774399
+    ],
+    "explodeOffset": [
+      -0.12,
+      0.0,
+      -0.08
+    ],
+    "source": "Powerbank (2).stp",
+    "boundsMeters": [
+      [
+        -0.03372998163104057,
+        0.3573712706565857,
+        -0.0424022302031517
+      ],
+      [
+        0.03372998163104057,
+        0.502628743648529,
+        -0.025597773492336273
+      ]
+    ]
+  },
+  "c3": {
+    "id": "c3",
+    "name": "ESP32-C3 SuperMini",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.2549999952316284,
+      0.15600000321865082,
+      0.02500000037252903
+    ],
+    "explodeOffset": [
+      0.045,
+      0.04,
+      0.045
+    ],
+    "source": "ESP32-C3 supermini v5 (1).step",
+    "boundsMeters": [
+      [
+        0.2460983842611313,
+        0.14400000870227814,
+        0.02290000021457672
+      ],
+      [
+        0.26390159130096436,
+        0.1679999977350235,
+        0.02710000053048134
+      ]
+    ]
+  },
+  "foot_imu": {
+    "id": "foot_imu",
+    "name": "GY-521 / MPU6050 \u00b7 ankle",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.27799999713897705,
+      0.12999999523162842,
+      0.02500000037252903
+    ],
+    "explodeOffset": [
+      0.07,
+      0.015,
+      0.065
+    ],
+    "source": "GY-521_MPU6050 Accelerometer (1).step",
+    "boundsMeters": [
+      [
+        0.26749998331069946,
+        0.12199999392032623,
+        0.023099856451153755
+      ],
+      [
+        0.28850001096725464,
+        0.1379999965429306,
+        0.026900144293904305
+      ]
+    ]
+  },
+  "ai_shell": {
+    "id": "ai_shell",
+    "name": "AI enclosure",
+    "zone": "ai",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.5899999737739563,
+      0.06300000101327896
+    ],
+    "explodeOffset": [
+      -0.1,
+      0.0,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.035999998450279236,
+        0.5364999771118164,
+        0.04400000348687172
+      ],
+      [
+        0.035999998450279236,
+        0.6434999704360962,
+        0.08100000023841858
+      ]
+    ]
+  },
+  "ai_shell_cover": {
+    "id": "ai_shell_cover",
+    "name": "AI enclosure \u00b7 removable cover",
+    "zone": "ai",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.5899999737739563,
+      0.0820000022649765
+    ],
+    "explodeOffset": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.035999998450279236,
+        0.5364999771118164,
+        0.08100000023841858
+      ],
+      [
+        0.035999998450279236,
+        0.6434999704360962,
+        0.08300000429153442
+      ]
+    ]
+  },
+  "camera_mount": {
+    "id": "camera_mount",
+    "name": "Camera optical bezel",
+    "zone": "ai",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.6589999794960022,
+      0.07999999821186066
+    ],
+    "explodeOffset": [
+      -0.07,
+      0.04,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.016499999910593033,
+        0.640999972820282,
+        0.0689999982714653
+      ],
+      [
+        0.016499999910593033,
+        0.6769999861717224,
+        0.09099999815225601
+      ]
+    ]
+  },
+  "laser_mount": {
+    "id": "laser_mount",
+    "name": "Laser clamp",
+    "zone": "control",
+    "shell": true,
+    "assembledPosition": [
+      -0.035999998450279236,
+      0.6600000262260437,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.08,
+      -0.04,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.04649999737739563,
+        0.6420000195503235,
+        0.019999999552965164
+      ],
+      [
+        -0.007999999448657036,
+        0.6780000329017639,
+        0.0430000014603138
+      ]
+    ]
+  },
+  "manual": {
+    "id": "manual",
+    "name": "Manual cue button",
+    "zone": "handle",
+    "shell": false,
+    "assembledPosition": [
+      0.06199999898672104,
+      0.9070000052452087,
+      0.004999999888241291
+    ],
+    "explodeOffset": [
+      0.024800000000000003,
+      0.08,
+      0.05
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.057999998331069946,
+        0.9038000106811523,
+        0.000999999581836164
+      ],
+      [
+        0.06599999964237213,
+        0.9139999747276306,
+        0.009000000543892384
+      ]
+    ]
+  },
+  "sos": {
+    "id": "sos",
+    "name": "SOS / cancel button",
+    "zone": "handle",
+    "shell": false,
+    "assembledPosition": [
+      0.09200000017881393,
+      0.9070000052452087,
+      0.004999999888241291
+    ],
+    "explodeOffset": [
+      0.0368,
+      0.08,
+      0.05
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.08799999952316284,
+        0.9038000106811523,
+        0.000999999581836164
+      ],
+      [
+        0.09600000083446503,
+        0.9139999747276306,
+        0.009000000543892384
+      ]
+    ]
+  },
+  "bank_cradle": {
+    "id": "bank_cradle",
+    "name": "Powerbank retention cradle",
+    "zone": "power",
+    "shell": true,
+    "assembledPosition": [
+      0.0,
+      0.4300000071525574,
+      -0.03400000184774399
+    ],
+    "explodeOffset": [
+      -0.09,
+      0.0,
+      -0.05
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.03772997856140137,
+        0.35537126660346985,
+        -0.04540222883224487
+      ],
+      [
+        0.03772997856140137,
+        0.5046287775039673,
+        -0.022597773000597954
+      ]
+    ]
+  },
+  "ai_clamp_1": {
+    "id": "ai_clamp_1",
+    "name": "Split shaft mounting collar",
+    "zone": "ai",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.5630000233650208,
+      0.0
+    ],
+    "explodeOffset": [
+      -0.12,
+      0.0,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.024000000208616257,
+        0.5570000410079956,
+        -0.017999999225139618
+      ],
+      [
+        0.024000000208616257,
+        0.5690000057220459,
+        0.04600000008940697
+      ]
+    ]
+  },
+  "ai_clamp_2": {
+    "id": "ai_clamp_2",
+    "name": "Split shaft mounting collar",
+    "zone": "ai",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.6200000047683716,
+      0.0
+    ],
+    "explodeOffset": [
+      -0.12,
+      0.0,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.024000000208616257,
+        0.6140000224113464,
+        -0.017999999225139618
+      ],
+      [
+        0.024000000208616257,
+        0.6259999871253967,
+        0.04600000008940697
+      ]
+    ]
+  },
+  "bank_clamp_1": {
+    "id": "bank_clamp_1",
+    "name": "Split shaft mounting collar",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.38499999046325684,
+      0.0
+    ],
+    "explodeOffset": [
+      0.1,
+      0.0,
+      -0.06
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.024000000208616257,
+        0.3789999783039093,
+        -0.02449999935925007
+      ],
+      [
+        0.024000000208616257,
+        0.39100000262260437,
+        0.017999999225139618
+      ]
+    ]
+  },
+  "bank_clamp_2": {
+    "id": "bank_clamp_2",
+    "name": "Split shaft mounting collar",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.4779999852180481,
+      0.0
+    ],
+    "explodeOffset": [
+      0.1,
+      0.0,
+      -0.06
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.024000000208616257,
+        0.47199997305870056,
+        -0.02449999935925007
+      ],
+      [
+        0.024000000208616257,
+        0.48399999737739563,
+        0.017999999225139618
+      ]
+    ]
+  },
+  "strap_shell": {
+    "id": "strap_shell",
+    "name": "Ankle electronics enclosure",
+    "zone": "strap",
+    "shell": true,
+    "assembledPosition": [
+      0.26600000262260437,
+      0.14300000667572021,
+      0.014000000432133675
+    ],
+    "explodeOffset": [
+      -0.04,
+      -0.035,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.23499999940395355,
+        0.1120000034570694,
+        -0.0030000004917383194
+      ],
+      [
+        0.296999990940094,
+        0.17400000989437103,
+        0.030000001192092896
+      ]
+    ]
+  },
+  "strap_shell_cover": {
+    "id": "strap_shell_cover",
+    "name": "Ankle electronics enclosure \u00b7 removable cover",
+    "zone": "strap",
+    "shell": true,
+    "assembledPosition": [
+      0.26600000262260437,
+      0.14300000667572021,
+      0.03099999949336052
+    ],
+    "explodeOffset": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.23499999940395355,
+        0.1120000034570694,
+        0.029999999329447746
+      ],
+      [
+        0.296999990940094,
+        0.17400000989437103,
+        0.03199999779462814
+      ]
+    ]
+  },
+  "strap_band": {
+    "id": "strap_band",
+    "name": "Elastic ankle strap",
+    "zone": "strap",
+    "shell": true,
+    "assembledPosition": [
+      0.26600000262260437,
+      0.14300000667572021,
+      -0.017999999225139618
+    ],
+    "explodeOffset": [
+      0.0,
+      -0.07,
+      0.0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.22499999403953552,
+        0.125,
+        -0.0729999989271164
+      ],
+      [
+        0.3070000112056732,
+        0.16100001335144043,
+        -0.014999998733401299
+      ]
+    ]
+  },
+  "battery": {
+    "id": "battery",
+    "name": "Protected 1S LiPo \u00b7 500mAh target",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.26600000262260437,
+      0.14300000667572021,
+      0.006000000052154064
+    ],
+    "explodeOffset": [
+      0.0,
+      -0.03,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.2460000067949295,
+        0.13050000369548798,
+        0.0035000001080334187
+      ],
+      [
+        0.28600001335144043,
+        0.15550000965595245,
+        0.008500000461935997
+      ]
+    ]
+  },
+  "driver_carrier": {
+    "id": "driver_carrier",
+    "name": "Three-channel actuator carrier",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.7120000123977661,
+      0.032999999821186066
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.023000000044703484,
+        0.6995000243186951,
+        0.03220000118017197
+      ],
+      [
+        0.023000000044703484,
+        0.7245000004768372,
+        0.033900000154972076
+      ]
+    ]
+  },
+  "strap_carrier": {
+    "id": "strap_carrier",
+    "name": "Ankle charging / regulation carrier",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.25,
+      0.12800000607967377,
+      0.017000000923871994
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.23749999701976776,
+        0.11750000715255737,
+        0.016200000420212746
+      ],
+      [
+        0.26249998807907104,
+        0.13850000500679016,
+        0.017900001257658005
+      ]
+    ]
+  },
+  "power_carrier": {
+    "id": "power_carrier",
+    "name": "Protected power distribution carrier",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.5180000066757202,
+      -0.03400000184774399
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.019999999552965164,
+        0.5055000185966492,
+        -0.03480000048875809
+      ],
+      [
+        0.019999999552965164,
+        0.5304999947547913,
+        -0.03310000151395798
+      ]
+    ]
+  },
+  "charger": {
+    "id": "charger",
+    "name": "MCP73831 charger carrier",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.23800000548362732,
+      0.12300000339746475,
+      0.01900000125169754
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.2355000078678131,
+        0.11980000883340836,
+        0.01860000193119049
+      ],
+      [
+        0.24050000309944153,
+        0.12550000846385956,
+        0.020625000819563866
+      ]
+    ]
+  },
+  "strap_reg": {
+    "id": "strap_reg",
+    "name": "TPS63031 3.3V buck-boost carrier",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.24500000476837158,
+      0.12300000339746475,
+      0.01900000125169754
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.24250000715255737,
+        0.11980000883340836,
+        0.01860000193119049
+      ],
+      [
+        0.2475000023841858,
+        0.12550000846385956,
+        0.020625000819563866
+      ]
+    ]
+  },
+  "pi_fuse": {
+    "id": "pi_fuse",
+    "name": "Pi branch eFuse / switch",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      -0.012000000104308128,
+      0.5130000114440918,
+      -0.03200000151991844
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.014499999582767487,
+        0.5098000168800354,
+        -0.03240000084042549
+      ],
+      [
+        -0.00950000062584877,
+        0.515500009059906,
+        -0.030375001952052116
+      ]
+    ]
+  },
+  "aux_fuse": {
+    "id": "aux_fuse",
+    "name": "Auxiliary 1A fuse / switch",
+    "zone": "power",
+    "shell": false,
+    "assembledPosition": [
+      -0.004999999888241291,
+      0.5130000114440918,
+      -0.03200000151991844
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.007499999832361937,
+        0.5098000168800354,
+        -0.03240000084042549
+      ],
+      [
+        -0.0024999999441206455,
+        0.515500009059906,
+        -0.030375001952052116
+      ]
+    ]
+  },
+  "sensor_reg": {
+    "id": "sensor_reg",
+    "name": "3.3V sensor regulator carrier",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.017000000923871994,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.019500000402331352,
+        0.7028000354766846,
+        0.03460000082850456
+      ],
+      [
+        -0.014500001445412636,
+        0.7085000276565552,
+        0.03662499785423279
+      ]
+    ]
+  },
+  "motor_reg": {
+    "id": "motor_reg",
+    "name": "3.0V actuator regulator carrier",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.010999999940395355,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.013499999418854713,
+        0.7028000354766846,
+        0.03460000082850456
+      ],
+      [
+        -0.008500000461935997,
+        0.7085000276565552,
+        0.03662499785423279
+      ]
+    ]
+  },
+  "tof_reset_pull": {
+    "id": "tof_reset_pull",
+    "name": "47k ToF reset pull-down",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.004999999888241291,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.005799999926239252,
+        0.7055750489234924,
+        0.0346749983727932
+      ],
+      [
+        -0.00419999985024333,
+        0.7064250111579895,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "tof_lpn_pull": {
+    "id": "tof_lpn_pull",
+    "name": "47k ToF LPn pull-up",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0010000000474974513,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.00020000003860332072,
+        0.7055750489234924,
+        0.0346749983727932
+      ],
+      [
+        0.0017999999690800905,
+        0.7064250111579895,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "tof_irq_pull": {
+    "id": "tof_irq_pull",
+    "name": "47k ToF INT pull-up",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.007000000216066837,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.006200000178068876,
+        0.7055750489234924,
+        0.0346749983727932
+      ],
+      [
+        0.007800000254064798,
+        0.7064250111579895,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "q_laser": {
+    "id": "q_laser",
+    "name": "AO3400A \u00b7 laser low-side MOSFET",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.013000000268220901,
+      0.706000030040741,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.011549999937415123,
+        0.7045000195503235,
+        0.0348999984562397
+      ],
+      [
+        0.01445000059902668,
+        0.7075000405311584,
+        0.03590000048279762
+      ]
+    ]
+  },
+  "rg_laser": {
+    "id": "rg_laser",
+    "name": "Gate resistor \u00b7 laser",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.017000000923871994,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.017800001427531242,
+        0.7115750312805176,
+        0.0346749983727932
+      ],
+      [
+        -0.016200000420212746,
+        0.7124249935150146,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "rpd_laser": {
+    "id": "rpd_laser",
+    "name": "Gate pull-down \u00b7 laser",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.010999999940395355,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.011799999512732029,
+        0.7115750312805176,
+        0.0346749983727932
+      ],
+      [
+        -0.010200000368058681,
+        0.7124249935150146,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "q_buzzer": {
+    "id": "q_buzzer",
+    "name": "AO3400A \u00b7 buzzer low-side MOSFET",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.004999999888241291,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.006449999753385782,
+        0.7105000019073486,
+        0.0348999984562397
+      ],
+      [
+        -0.0035500000230968,
+        0.7135000228881836,
+        0.03590000048279762
+      ]
+    ]
+  },
+  "rg_buzzer": {
+    "id": "rg_buzzer",
+    "name": "Gate resistor \u00b7 buzzer",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0010000000474974513,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.00020000003860332072,
+        0.7115750312805176,
+        0.0346749983727932
+      ],
+      [
+        0.0017999999690800905,
+        0.7124249935150146,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "rpd_buzzer": {
+    "id": "rpd_buzzer",
+    "name": "Gate pull-down \u00b7 buzzer",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.007000000216066837,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.006200000178068876,
+        0.7115750312805176,
+        0.0346749983727932
+      ],
+      [
+        0.007800000254064798,
+        0.7124249935150146,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "d_buzzer": {
+    "id": "d_buzzer",
+    "name": "1N5819 flyback diode \u00b7 buzzer",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.013000000268220901,
+      0.7120000123977661,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.012200000695884228,
+        0.7115750312805176,
+        0.0346749983727932
+      ],
+      [
+        0.013799999840557575,
+        0.7124249935150146,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "q_motor": {
+    "id": "q_motor",
+    "name": "AO3400A \u00b7 motor low-side MOSFET",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.017000000923871994,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.018450001254677773,
+        0.7164999842643738,
+        0.0348999984562397
+      ],
+      [
+        -0.015550000593066216,
+        0.7195000052452087,
+        0.03590000048279762
+      ]
+    ]
+  },
+  "rg_motor": {
+    "id": "rg_motor",
+    "name": "Gate resistor \u00b7 motor",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.010999999940395355,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.011799999512732029,
+        0.7175750136375427,
+        0.0346749983727932
+      ],
+      [
+        -0.010200000368058681,
+        0.7184249758720398,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "rpd_motor": {
+    "id": "rpd_motor",
+    "name": "Gate pull-down \u00b7 motor",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.004999999888241291,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.005799999926239252,
+        0.7175750136375427,
+        0.0346749983727932
+      ],
+      [
+        -0.00419999985024333,
+        0.7184249758720398,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "d_motor": {
+    "id": "d_motor",
+    "name": "1N5819 flyback diode \u00b7 motor",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.0010000000474974513,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.00020000003860332072,
+        0.7175750136375427,
+        0.0346749983727932
+      ],
+      [
+        0.0017999999690800905,
+        0.7184249758720398,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "pull_cane_sda": {
+    "id": "pull_cane_sda",
+    "name": "2.2k cane I2C pull-up \u00b7 CANE_SDA",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.007000000216066837,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.006200000178068876,
+        0.7175750136375427,
+        0.0346749983727932
+      ],
+      [
+        0.007800000254064798,
+        0.7184249758720398,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "pull_cane_scl": {
+    "id": "pull_cane_scl",
+    "name": "2.2k cane I2C pull-up \u00b7 CANE_SCL",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      0.013000000268220901,
+      0.7179999947547913,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.012200000695884228,
+        0.7175750136375427,
+        0.0346749983727932
+      ],
+      [
+        0.013799999840557575,
+        0.7184249758720398,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "pull_foot_sda": {
+    "id": "pull_foot_sda",
+    "name": "4.7k ankle I2C pull-up \u00b7 FOOT_SDA",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.25200000405311584,
+      0.12300000339746475,
+      0.01900000125169754
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.25119999051094055,
+        0.12257499992847443,
+        0.018675001338124275
+      ],
+      [
+        0.25280001759529114,
+        0.12342500686645508,
+        0.019325001165270805
+      ]
+    ]
+  },
+  "pull_foot_scl": {
+    "id": "pull_foot_scl",
+    "name": "4.7k ankle I2C pull-up \u00b7 FOOT_SCL",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.2590000033378601,
+      0.12300000339746475,
+      0.01900000125169754
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.2581999897956848,
+        0.12257499992847443,
+        0.018675001338124275
+      ],
+      [
+        0.2598000168800354,
+        0.12342500686645508,
+        0.019325001165270805
+      ]
+    ]
+  },
+  "pull_manual_input": {
+    "id": "pull_manual_input",
+    "name": "10k button pull-up \u00b7 MANUAL_INPUT",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.017000000923871994,
+      0.7240000367164612,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.017800001427531242,
+        0.7235750555992126,
+        0.0346749983727932
+      ],
+      [
+        -0.016200000420212746,
+        0.7244250178337097,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "pull_sos_input": {
+    "id": "pull_sos_input",
+    "name": "10k button pull-up \u00b7 SOS_INPUT",
+    "zone": "control",
+    "shell": false,
+    "assembledPosition": [
+      -0.010999999940395355,
+      0.7240000367164612,
+      0.03500000014901161
+    ],
+    "explodeOffset": [
+      -0.09,
+      -0.025,
+      0.08
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.011799999512732029,
+        0.7235750555992126,
+        0.0346749983727932
+      ],
+      [
+        -0.010200000368058681,
+        0.7244250178337097,
+        0.035325001925230026
+      ]
+    ]
+  },
+  "sd": {
+    "id": "sd",
+    "name": "64GB microSD",
+    "zone": "ai",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.5440000295639038,
+      0.0560000017285347
+    ],
+    "explodeOffset": [
+      0.06,
+      -0.035,
+      0.07
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        -0.005499999970197678,
+        0.5365000367164612,
+        0.05550000071525574
+      ],
+      [
+        0.005499999970197678,
+        0.5515000224113464,
+        0.057624999433755875
+      ]
+    ]
+  },
+  "strap_switch": {
+    "id": "strap_switch",
+    "name": "Foot power switch",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.29100000858306885,
+      0.1459999978542328,
+      0.019999999552965164
+    ],
+    "explodeOffset": [
+      0.06,
+      -0.035,
+      0.07
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.2880000174045563,
+        0.1420000046491623,
+        0.017500000074505806
+      ],
+      [
+        0.2939999997615814,
+        0.14999999105930328,
+        0.022499999031424522
+      ]
+    ]
+  },
+  "charge_port": {
+    "id": "charge_port",
+    "name": "Foot USB charging port",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.26600000262260437,
+      0.11400000005960464,
+      0.01899999938905239
+    ],
+    "explodeOffset": [
+      0.06,
+      -0.035,
+      0.07
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": [
+      [
+        0.2615000009536743,
+        0.11050000041723251,
+        0.016999999061226845
+      ],
+      [
+        0.2705000042915344,
+        0.11749999970197678,
+        0.020999999716877937
+      ]
+    ]
+  },
+  "harness": {
+    "id": "harness",
+    "name": "Cane netlist harness",
+    "zone": "wiring",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "explodeOffset": [
+      0,
+      0,
+      0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": null
+  },
+  "foot_harness": {
+    "id": "foot_harness",
+    "name": "Ankle netlist harness",
+    "zone": "strap",
+    "shell": false,
+    "assembledPosition": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "explodeOffset": [
+      0,
+      0,
+      0
+    ],
+    "source": "Proposed geometry",
+    "boundsMeters": null
+  }
+}
